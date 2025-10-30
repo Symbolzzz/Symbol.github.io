@@ -4,34 +4,52 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
         if (target) {
-            target.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
+            const offsetTop = target.offsetTop - 20;
+            window.scrollTo({
+                top: offsetTop,
+                behavior: 'smooth'
             });
         }
     });
 });
 
-// 导航栏滚动效果
-let lastScroll = 0;
-const navbar = document.querySelector('.navbar');
+// 高亮当前导航项
+const navItems = document.querySelectorAll('.nav-item');
+const sections = document.querySelectorAll('.content-section');
 
-window.addEventListener('scroll', () => {
-    const currentScroll = window.pageYOffset;
+function highlightNav() {
+    let current = '';
     
-    if (currentScroll <= 0) {
-        navbar.style.boxShadow = 'none';
-    } else {
-        navbar.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.1)';
-    }
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (window.pageYOffset >= (sectionTop - 100)) {
+            current = section.getAttribute('id');
+        }
+    });
     
-    lastScroll = currentScroll;
-});
+    navItems.forEach(item => {
+        item.classList.remove('active');
+        if (item.getAttribute('href') === `#${current}`) {
+            item.style.backgroundColor = 'var(--accent-color)';
+            item.style.color = 'white';
+        } else {
+            item.style.backgroundColor = '';
+            item.style.color = '';
+        }
+    });
+}
 
-// 项目卡片动画
+// 监听滚动
+window.addEventListener('scroll', highlightNav);
+
+// 页面加载时执行一次
+window.addEventListener('load', highlightNav);
+
+// 项目卡片渐入效果
 const observerOptions = {
     threshold: 0.1,
-    rootMargin: '0px 0px -100px 0px'
+    rootMargin: '0px 0px -50px 0px'
 };
 
 const observer = new IntersectionObserver((entries) => {
@@ -43,17 +61,8 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-// 为所有项目卡片添加观察
-document.querySelectorAll('.project-card').forEach(card => {
-    card.style.opacity = '0';
-    card.style.transform = 'translateY(20px)';
-    card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-    observer.observe(card);
+// 为所有内容区块添加观察
+document.querySelectorAll('.content-section').forEach(section => {
+    observer.observe(section);
 });
 
-// 添加当前年份到页脚
-const currentYear = new Date().getFullYear();
-const footerText = document.querySelector('.footer p');
-if (footerText) {
-    footerText.textContent = `© ${currentYear} Symbol. All rights reserved.`;
-}
