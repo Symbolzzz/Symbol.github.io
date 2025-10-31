@@ -64,9 +64,16 @@
                     <!-- 流程图 -->
                     <div class="project-pipeline">
                         <!-- <h4>方法流程图</h4> -->
-                        <img src="images/poster.pdf" alt="方法流程图">
-                        <!-- 如果没有流程图，可以用占位图 -->
-                        <!-- <div class="pipeline-placeholder">流程图区域 - 请添加 images/project1-pipeline.png</div> -->
+                        <!-- 方式1: 使用 embed 标签嵌入 PDF -->
+                        <!-- <embed src="images/poster.pdf" type="application/pdf"> -->
+                        
+                        <!-- 方式2: 使用 object 标签嵌入 PDF (备选) -->
+                        <!-- <object data="images/poster.pdf" type="application/pdf">
+                            <p>无法显示PDF，请<a href="images/poster.pdf" target="_blank">点击这里查看</a></p>
+                        </object> -->
+                        
+                        <!-- 方式3: 转换为图片后使用 (推荐) -->
+                        <img src="images/poster.png" alt="方法流程图">
                     </div>
                     
                     <!-- Demo展示 -->
@@ -148,8 +155,8 @@
                     <!-- 流程图 -->
                     <div class="project-pipeline">
                         <!-- <h4>方法流程图</h4> -->
-                        <img src="images/main.pdf" alt="方法流程图">
-                        <!-- <div class="pipeline-placeholder">流程图区域 - 请添加 images/project2-pipeline.png</div> -->
+                        <!-- <embed src="images/main.pdf" type="application/pdf"> -->
+                        <img src="images/main.png" alt="方法流程图">
                     </div>
                     
                     <!-- Demo展示 -->
