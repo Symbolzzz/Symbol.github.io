@@ -17,12 +17,6 @@
                 <p class="bio">3D Computer Vision</p>
             </div>
 
-            <nav class="nav">
-                <a href="#about">关于我</a>
-                <a href="#projects">项目展示</a>
-                <a href="#publications">论文发表</a>
-            </nav>
-
             <div class="research-interests">
                 <h3>研究兴趣</h3>
                 <ul class="interest-list">
@@ -32,6 +26,13 @@
                     <li>Diffusion Models</li>
                 </ul>
             </div>
+
+            <nav class="nav">
+                <a href="#about">关于我</a>
+                <a href="#projects">项目展示</a>
+                <a href="#publications">论文发表</a>
+            </nav>
+
 
             <div class="contact">
                 <a href="mailto:your.email@example.com">Email</a>
@@ -45,7 +46,7 @@
             <section id="about" class="section">
                 <h2>关于我</h2>
                 <p>我目前专注于3D数字人动作生成、可控动作生成、实时重定向。</p>
-                <p>目前在深圳大学进行科研工作。</p>
+                <p>深圳大学计算机科学与技术专业硕士研究生在读。</p>
             </section>
 
             <section id="projects" class="section">
@@ -62,15 +63,15 @@
                     
                     <!-- 流程图 -->
                     <div class="project-pipeline">
-                        <h4>方法流程图</h4>
-                        <img src="images/project1-pipeline.png" alt="方法流程图">
+                        <!-- <h4>方法流程图</h4> -->
+                        <img src="images/poster.pdf" alt="方法流程图">
                         <!-- 如果没有流程图，可以用占位图 -->
                         <!-- <div class="pipeline-placeholder">流程图区域 - 请添加 images/project1-pipeline.png</div> -->
                     </div>
                     
                     <!-- Demo展示 -->
                     <div class="project-demo">
-                        <h4>Demo 展示</h4>
+                        <!-- <h4>Demo 展示</h4> -->
                         <div class="project-video">
                             <video controls poster="">
                                 <source src="videos/Personalized 3D Co-Speech Gesture Generation via Style Extraction from a Single Video_new.mp4" type="video/mp4">
@@ -87,6 +88,54 @@
                     </div>
                 </div>
 
+                <!-- 项目3 -->
+                <div class="project">
+                    <div class="project-header">
+                        <h3>Text-to-motion with trajectory control</h3>
+                        <p class="project-year">2025 · Text-to-motion</p>
+                    </div>
+                    
+                    <p class="project-desc">针对目前Text-to-motion的轨迹控制会影响动作质量的问题，参考了Motion Matching中的轨迹计算方法，改善了轨迹控制效果。</p>
+                    
+                    <!-- 流程图 -->
+                    <div class="project-pipeline">
+                        <!-- <h4>方法流程图</h4> -->
+                        <img src="images/advanced_MotionLCM.png" alt="方法流程图">
+                        <!-- <div class="pipeline-placeholder">流程图区域 - 请添加 images/project3-pipeline.png</div> -->
+                    </div>
+                    
+                    <!-- Demo展示 -->
+                    <div class="project-question">
+                        <h4>研究问题：轨迹控制会影响生成的动作质量</h4>
+                        <div class="demo-grid">
+                            <div class="project-video">
+                                <video controls poster="">
+                                    <source src="videos/2025-08-21 19-31-46 (1).mp4" type="video/mp4">
+                                    您的浏览器不支持视频播放。
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-demo">
+                        <h4>改善轨迹计算重新训练的模型</h4>
+                        <div class="demo-grid">
+                            <div class="project-video">
+                                <video controls poster="">
+                                    <source src="videos/a_person_is_talking_length10.00_traj_visualization (1).mp4" type="video/mp4">
+                                    您的浏览器不支持视频播放。
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="tags"> Text-to-Motion · Motion Matching</p>
+                    <div class="links">
+                        <a href="#">Paper</a>
+                        <a href="#">Code</a>
+                        <a href="#">Demo</a>
+                    </div>
+                </div>
+
                 <!-- 项目2 -->
                 <div class="project">
                     <div class="project-header">
@@ -98,14 +147,14 @@
                     
                     <!-- 流程图 -->
                     <div class="project-pipeline">
-                        <h4>方法流程图</h4>
-                        <img src="images/project2-pipeline.png" alt="方法流程图">
+                        <!-- <h4>方法流程图</h4> -->
+                        <img src="images/main.pdf" alt="方法流程图">
                         <!-- <div class="pipeline-placeholder">流程图区域 - 请添加 images/project2-pipeline.png</div> -->
                     </div>
                     
                     <!-- Demo展示 -->
                     <div class="project-demo">
-                        <h4>Demo 展示</h4>
+                        <!-- <h4>Demo 展示</h4> -->
                         <div class="demo-grid">
                             <div class="project-video">
                                 <video controls poster="">
@@ -125,6 +174,12 @@
                                     您的浏览器不支持视频播放。
                                 </video>
                             </div>
+                            <div class="project-video">
+                                <video controls poster="">
+                                    <source src="videos/MRAgent_demo.mp4" type="video/mp4">
+                                    您的浏览器不支持视频播放。
+                                </video>
+                            </div>
                         </div>
                     </div>
                     
@@ -135,40 +190,6 @@
                     </div>
                 </div>
 
-                <!-- 项目3 -->
-                <div class="project">
-                    <div class="project-header">
-                        <h3>文本到动作生成</h3>
-                        <p class="project-year">2024 · Text-to-motion</p>
-                    </div>
-                    
-                    <p class="project-desc">基于文本描述生成对应的人体动作序列，支持多样化的动作风格控制和实时交互。</p>
-                    
-                    <!-- 流程图 -->
-                    <div class="project-pipeline">
-                        <h4>方法流程图</h4>
-                        <img src="images/project3-pipeline.png" alt="方法流程图">
-                        <!-- <div class="pipeline-placeholder">流程图区域 - 请添加 images/project3-pipeline.png</div> -->
-                    </div>
-                    
-                    <!-- Demo展示 -->
-                    <div class="project-demo">
-                        <h4>Demo 展示</h4>
-                        <div class="project-video">
-                            <video controls poster="">
-                                <source src="videos/project3.mp4" type="video/mp4">
-                                您的浏览器不支持视频播放。
-                            </video>
-                        </div>
-                    </div>
-                    
-                    <p class="tags">PyTorch · Text-to-Motion · Controllable</p>
-                    <div class="links">
-                        <a href="#">Paper</a>
-                        <a href="#">Code</a>
-                        <a href="#">Demo</a>
-                    </div>
-                </div>
             </section>
 
             <section id="publications" class="section">
