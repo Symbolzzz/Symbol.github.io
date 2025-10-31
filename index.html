@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>宣恩允 - Xuanen Yun</title>
+    <title>宣恩允的个人主页</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -19,10 +19,19 @@
 
             <nav class="nav">
                 <a href="#about">关于我</a>
-                <a href="#research">研究兴趣</a>
-                <a href="#publications">论文发表</a>
                 <a href="#projects">项目展示</a>
+                <a href="#publications">论文发表</a>
             </nav>
+
+            <div class="research-interests">
+                <h3>研究兴趣</h3>
+                <ul class="interest-list">
+                    <li>Audio-to-gesture</li>
+                    <li>Text-to-motion</li>
+                    <li>Motion Matching</li>
+                    <li>Diffusion Models</li>
+                </ul>
+            </div>
 
             <div class="contact">
                 <a href="mailto:your.email@example.com">Email</a>
@@ -39,14 +48,127 @@
                 <p>目前在深圳大学进行科研工作。</p>
             </section>
 
-            <section id="research" class="section">
-                <h2>研究兴趣</h2>
-                <ul class="list">
-                    <li>Audio-to-gesture</li>
-                    <li>Text-to-motion</li>
-                    <li>Motion Matching</li>
-                    <li>Diffusion Models</li>
-                </ul>
+            <section id="projects" class="section">
+                <h2>项目展示</h2>
+                
+                <!-- 项目1 -->
+                <div class="project">
+                    <div class="project-header">
+                        <h3>可学习用户风格的个性化3D数字人生成</h3>
+                        <p class="project-year">2025 · Audio-to-gesture</p>
+                    </div>
+                    
+                    <p class="project-desc">针对个人演讲风格难以量化的问题，开创性地提出将风格解耦为运动学与空间维度的分析范式，并设计了一套全新的量化评估指标。</p>
+                    
+                    <!-- 流程图 -->
+                    <div class="project-pipeline">
+                        <h4>方法流程图</h4>
+                        <img src="images/project1-pipeline.png" alt="方法流程图">
+                        <!-- 如果没有流程图，可以用占位图 -->
+                        <!-- <div class="pipeline-placeholder">流程图区域 - 请添加 images/project1-pipeline.png</div> -->
+                    </div>
+                    
+                    <!-- Demo展示 -->
+                    <div class="project-demo">
+                        <h4>Demo 展示</h4>
+                        <div class="project-video">
+                            <video controls poster="">
+                                <source src="videos/Personalized 3D Co-Speech Gesture Generation via Style Extraction from a Single Video_new.mp4" type="video/mp4">
+                                您的浏览器不支持视频播放。
+                            </video>
+                        </div>
+                    </div>
+                    
+                    <p class="tags">Gesture Generation · Diffusion · 3D Animation</p>
+                    <div class="links">
+                        <a href="#">Paper</a>
+                        <a href="#">Code</a>
+                        <a href="#">Project Page</a>
+                    </div>
+                </div>
+
+                <!-- 项目2 -->
+                <div class="project">
+                    <div class="project-header">
+                        <h3>语音驱动3D数字人全身动作生成</h3>
+                        <p class="project-year">2024 · Audio-to-gesture</p>
+                    </div>
+                    
+                    <p class="project-desc">为解决表情与手势协同生成难题，提出一种基于多任务学习的多模态生成框架，实现音频驱动下的全身动作联合建模。</p>
+                    
+                    <!-- 流程图 -->
+                    <div class="project-pipeline">
+                        <h4>方法流程图</h4>
+                        <img src="images/project2-pipeline.png" alt="方法流程图">
+                        <!-- <div class="pipeline-placeholder">流程图区域 - 请添加 images/project2-pipeline.png</div> -->
+                    </div>
+                    
+                    <!-- Demo展示 -->
+                    <div class="project-demo">
+                        <h4>Demo 展示</h4>
+                        <div class="demo-grid">
+                            <div class="project-video">
+                                <video controls poster="">
+                                    <source src="videos/ours_2_scott_0_2_2_part1.mp4" type="video/mp4">
+                                    您的浏览器不支持视频播放。
+                                </video>
+                            </div>
+                            <div class="project-video">
+                                <video controls poster="">
+                                    <source src="videos/ours_8_catherine_0_5_5_part1.mp4" type="video/mp4">
+                                    您的浏览器不支持视频播放。
+                                </video>
+                            </div>
+                            <div class="project-video">
+                                <video controls poster="">
+                                    <source src="videos/1300-1600.mp4" type="video/mp4">
+                                    您的浏览器不支持视频播放。
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p class="tags">Holistic Motion Generation · Multi-task-learning</p>
+                    <div class="links">
+                        <a href="#">Paper</a>
+                        <a href="#">Code</a>
+                    </div>
+                </div>
+
+                <!-- 项目3 -->
+                <div class="project">
+                    <div class="project-header">
+                        <h3>文本到动作生成</h3>
+                        <p class="project-year">2024 · Text-to-motion</p>
+                    </div>
+                    
+                    <p class="project-desc">基于文本描述生成对应的人体动作序列，支持多样化的动作风格控制和实时交互。</p>
+                    
+                    <!-- 流程图 -->
+                    <div class="project-pipeline">
+                        <h4>方法流程图</h4>
+                        <img src="images/project3-pipeline.png" alt="方法流程图">
+                        <!-- <div class="pipeline-placeholder">流程图区域 - 请添加 images/project3-pipeline.png</div> -->
+                    </div>
+                    
+                    <!-- Demo展示 -->
+                    <div class="project-demo">
+                        <h4>Demo 展示</h4>
+                        <div class="project-video">
+                            <video controls poster="">
+                                <source src="videos/project3.mp4" type="video/mp4">
+                                您的浏览器不支持视频播放。
+                            </video>
+                        </div>
+                    </div>
+                    
+                    <p class="tags">PyTorch · Text-to-Motion · Controllable</p>
+                    <div class="links">
+                        <a href="#">Paper</a>
+                        <a href="#">Code</a>
+                        <a href="#">Demo</a>
+                    </div>
+                </div>
             </section>
 
             <section id="publications" class="section">
@@ -54,7 +176,7 @@
                 
                 <div class="item">
                     <h3>Paper Title Goes Here</h3>
-                    <p class="meta"><strong>Your Name</strong>, Co-author 1, Co-author 2</p>
+                    <p class="meta"><strong>Xuanen Yun</strong>, Co-author 1, Co-author 2</p>
                     <p class="meta">Conference/Journal 2024</p>
                     <div class="links">
                         <a href="#">Paper</a>
@@ -65,79 +187,11 @@
 
                 <div class="item">
                     <h3>Another Paper Title</h3>
-                    <p class="meta">Co-author 1, <strong>Your Name</strong>, Co-author 2</p>
+                    <p class="meta">Co-author 1, <strong>Xuanen Yun</strong>, Co-author 2</p>
                     <p class="meta">Conference/Journal 2023</p>
                     <div class="links">
                         <a href="#">Paper</a>
                         <a href="#">Code</a>
-                    </div>
-                </div>
-            </section>
-
-            <section id="projects" class="section">
-                <h2>项目展示</h2>
-                
-                <div class="project">
-                    <h3>2025 Audio-to-gesture</h3>
-                    <h4>可学习用户风格的个性化3D 数字人生成</h4>
-                    <p>针对个人演讲风格难以量化的问题，开创性地提出将风格解耦为运动学与空间维度的分析范式，并设计了一套全新的量化评估指标。</p>
-                    <div class="project-video">
-                        <video controls poster="">
-                            <source src="videos/Personalized 3D Co-Speech Gesture Generation via Style Extraction from a Single Video_new.mp4" type="video/mp4">
-                            您的浏览器不支持视频播放。
-                        </video>
-                    </div>
-                    <p class="tags">Gesture Generation · Diffusion ·  3D Animation</p>
-                    <!-- <div class="links">
-                        <a href="#">GitHub</a>
-                        <a href="#">Demo</a>
-                    </div> -->
-                </div>
-
-                <div class="project">
-                    <h3>2024 Audio-to-gesture</h3>
-                    <h4>语音驱动3D 数字人全身动作生成</h4>
-                    <p>为解决表情与手势协同生成难题，提出一种基于多任务学习的多模态生成框架，实现音频驱动下的全身动作联合建模</p>
-                    <div class="project-video-row" style="display:flex; gap:12px; flex-wrap:wrap;">
-                        <div class="project-video" style="flex:1; min-width:240px;">
-                            <video controls poster="" style="width:100%; height:auto;">
-                                <source src="videos/ours_2_scott_0_2_2_part1.mp4" type="video/mp4">
-                                您的浏览器不支持视频播放。
-                            </video>
-                        </div>
-                        <div class="project-video" style="flex:1; min-width:240px;">
-                            <video controls poster="" style="width:100%; height:auto;">
-                                <source src="videos/ours_8_catherine_0_5_5_part1.mp4" type="video/mp4">
-                                您的浏览器不支持视频播放。
-                            </video>
-                        </div>
-                        <div class="project-video" style="flex:1; min-width:240px;">
-                            <video controls poster="" style="width:100%; height:auto;">
-                                <source src="videos/1300-1600.mp4" type="video/mp4">
-                                您的浏览器不支持视频播放。
-                            </video>
-                        </div>
-                    </div>
-                    <p class="tags">Holistic Motion Generation · Multi-task-learning</p>
-                    <!-- <div class="links">
-                        <a href="#">GitHub</a>
-                        <a href="#">Paper</a>
-                    </div> -->
-                </div>
-
-                <div class="project">
-                    <div class="project-video">
-                        <video controls poster="">
-                            <source src="videos/project3.mp4" type="video/mp4">
-                            您的浏览器不支持视频播放。
-                        </video>
-                    </div>
-                    <h3>文本到动作生成</h3>
-                    <p>基于文本描述生成对应的人体动作序列，支持多样化的动作风格控制和实时交互。</p>
-                    <p class="tags">PyTorch · Text-to-Motion · Controllable</p>
-                    <div class="links">
-                        <a href="#">GitHub</a>
-                        <a href="#">Demo</a>
                     </div>
                 </div>
             </section>
