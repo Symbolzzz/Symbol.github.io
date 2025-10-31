@@ -29,6 +29,8 @@ body {
 .layout {
     display: flex;
     min-height: 100vh;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 /* 左侧边栏 - 极简设计 */
@@ -41,6 +43,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    left: 50%;
+    margin-left: -700px;
 }
 
 .profile {
@@ -106,8 +110,8 @@ body {
 .main-content {
     margin-left: 280px;
     flex: 1;
-    padding: 80px 80px 80px 100px;
-    max-width: 900px;
+    padding: 80px 100px 80px 80px;
+    max-width: 800px;
 }
 
 /* 区块 */
@@ -213,6 +217,13 @@ body {
 }
 
 /* 响应式 */
+@media (max-width: 1400px) {
+    .sidebar {
+        left: 0;
+        margin-left: 0;
+    }
+}
+
 @media (max-width: 1024px) {
     .sidebar {
         width: 240px;
