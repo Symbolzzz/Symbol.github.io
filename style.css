@@ -172,6 +172,21 @@ body {
     letter-spacing: -0.2px;
 }
 
+/* 项目视频 */
+.project-video {
+    margin-bottom: 20px;
+    width: 100%;
+    background-color: var(--bg-color);
+    border: 1px solid var(--border-color);
+}
+
+.project-video video {
+    width: 100%;
+    height: auto;
+    display: block;
+    background-color: #000;
+}
+
 .meta {
     font-size: 13px;
     color: var(--text-secondary);
